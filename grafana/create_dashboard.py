@@ -13,15 +13,17 @@ grafana_headers = {
     'Content-Type': 'application/json'
 }
 
-datasource_config = {
-    "name": "Customers DB",
-    "type": "postgres",
-    "access": "proxy",
-    "url": "db:5432",
-    "database": "customers",
-    "user": "postgres",
-    "password": "postgres"
-}
+datasource_name = "Customers DB"
+
+# Define datasource URL
+datasource_url = f'{grafana_url}/datasources/name/{datasource_name}'
+# Get datasource
+response = requests.get(datasource_url, headers=grafana_headers)
+response.raise_for_status()
+print(f'Got Grafana datasource: {response.json()}')
+
+# Get datasource UID from response
+datasource_uid = response.json()['id']
 
 # Define dashboard config with datasource
 dashboard_config = {
@@ -38,7 +40,7 @@ dashboard_config = {
                 "type": "table",
                 "title": "Customer Total Spent",
                 "datasource": {
-                    "uid": "cSbkpFaVz",
+                    "uid": f"{datasource_uid}",
                     "type": "postgres"
                 },
                 "gridPos": {
@@ -52,11 +54,11 @@ dashboard_config = {
                     {
                         "datasource": {
                             "type": "postgres",
-                            "uid": "cSbkpFaVz"
+                            "uid": f"{datasource_uid}"
                         },
                         "refId": "A",
                         "format": "table",
-                        "rawSql": "SELECT customer_id, total_spent FROM customer_total_spent LIMIT 50 ",
+                        "rawSql": "SELECT customer_id, total_spent FROM customer_total_spent LIMIT 50",
                         "editorMode": "builder",
                         "sql": {
                             "columns": [
@@ -143,7 +145,7 @@ dashboard_config = {
             "name": "DS_CUSTDB",
             "type": "datasource",
             "pluginId": "postgres",
-            "value": datasource_config["name"]
+            "value": f"{datasource_uid}"
         }
     ]
 }
