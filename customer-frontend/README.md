@@ -1,5 +1,7 @@
 # Customer frontend
 
+** This app is not included in the main docker-compose because it takes several minutes to build
+
 To deploy this app, npm is required.
 
 1.Navigate to /customer-frontend and simply run:
