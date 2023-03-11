@@ -2,7 +2,7 @@
 
 A system for managing customers and their purchased items, demonstrates distributed, data oriented design.
 
-<img width="735" alt="Screenshot 2023-03-12 at 0 14 05" src="https://user-images.githubusercontent.com/44731477/224513743-bd497786-4e79-426b-8dc4-cd9e28a03d9e.png">
+![customer_platform drawio](https://user-images.githubusercontent.com/44731477/224516454-27379ee4-6c3c-4799-a3e0-996b4a43b2f1.png)
 
 
 ** In the actual configuration some services that should be private are currently exposed to the host machine
