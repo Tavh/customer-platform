@@ -14,7 +14,7 @@ for debugging purposes
     frontend, for example a mobile application. It exposes a REST API and is a Kafka Producer.
     When deployed, this service is reachable from outside the container network on port 5000.
 
-- `customer-management-service` - The system's core service, manages the entities of the system in a relational database using SQLAlchemy. It exposes an internal REST API, interacts with the database using SQLAlchemy ORM and consumes topics     from Kafka. In dev stage, the service seeds it's own data for testing purposes.
+- `customer-management-service` - The system's core service, manages the entities of the system in a relational database using SQLAlchemy. It exposes an internal REST API, interacts with the database using SQLAlchemy ORM and consumes messages from "purchases" topic. In dev stage, the service seeds it's own data for testing purposes.
     When deployed, it does not allow requests from outside the container network.
 
 - `Kafka Broker` - A Pub-Sub system messaging system for data streaming, processing and async communication.
