@@ -30,15 +30,15 @@ for debugging purposes
 To Deploy the platoform, only docker is required:
 
 1. Clone this repository
-2. Navigate to /docker-compose
-3. If you're using an ARM CPU, run:
+2. Create a bridge network is required for communication with airflow later on:
 ```
-export DOCKER_DEFAULT_PLATFORM=linux/amd64
+docker network create customer-airflow-bridge
 ```
-4. Run the docker-compose file:
+
+3. Run the docker-compose file (DOCKER_DEFAULT_PLATFORM is set in case you're running an ARM CPU):
 
 ```
-docker-compose up -d --build
+DOCKER_DEFAULT_PLATFORM=linux/amd64 docker-compose up -d --build
 ```
 <img width="435" alt="Screenshot 2023-03-11 at 11 39 44" src="https://user-images.githubusercontent.com/44731477/224477143-5a109e9e-b5d7-4961-9c23-980695c2f1c0.png">
 
