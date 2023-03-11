@@ -5,6 +5,7 @@ import requests
 from util.logger import get_logger
 from requests.exceptions import HTTPError
 from models.models import Purchase
+from flask_cors import CORS
 
 
 class RestController:
@@ -16,6 +17,7 @@ class RestController:
             app (Flask): The Flask application instance.
             producer (KafkaPurchaseProducer): The KafkaPurchaseProducer instance to use for publishing purchase events.
         """
+        CORS(app)
         self.app = app
         self.logger = get_logger(__name__)
         self.producer = producer
