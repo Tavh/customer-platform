@@ -1,0 +1,10 @@
+# Exclude the venv directory
+venv/
+
+# Exclude any files or directories that start with a period (e.g. .git)
+.*
+
+# Exclude any Python cache files
+__pycache__/
+*.pyc
+*.pyo
