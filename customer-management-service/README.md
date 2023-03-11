@@ -28,9 +28,10 @@ make run-local
 
 Requires the following env variables:
 
+`STAGE` - The stage this application is deployed on ('dev' for seeding)
 `DATABASE_URL` - connection string to an relational db
-`BOOTSTRAP_SERVERS` = list of kafka broker strings (standard kafka format)
-`TOPIC` = a kafka topic to consume from
+`BOOTSTRAP_SERVERS` - list of kafka broker strings (standard kafka format)
+`TOPIC` - a kafka topic to consume from
 
 ## Testing
 
