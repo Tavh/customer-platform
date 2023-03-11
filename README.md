@@ -35,7 +35,7 @@ To Deploy the platoform, only docker is required:
 docker network create customer-airflow-bridge
 ```
 
-3. Run the docker-compose file (DOCKER_DEFAULT_PLATFORM is set in case you're running an ARM CPU):
+3. Run the docker-compose file (DOCKER_DEFAULT_PLATFORM is set to amd64 in case you're running an ARM CPU):
 
 ```
 DOCKER_DEFAULT_PLATFORM=linux/amd64 docker-compose up -d --build
