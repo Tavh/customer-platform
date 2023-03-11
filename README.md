@@ -4,16 +4,21 @@ A system for managing customers and their purchased items, demonstrates distribu
 
 ## The platform contains the following components:
 
-- `customer-bff-service` - A client-facing web server, follows the "BFF" architectural style, serves a dedicated 
-frontend, for example a mobile application. It exposes a REST API and is a Kafka Producer.
+- `customer-bff-service` - A client-facing web server, serves a specfiic 
+    frontend, for example a mobile application. It exposes a REST API and is a Kafka Producer.
+    When deployed, this service is reachable from outside the container network on port 5000.
 
-- `customer-management-service` - The system's core service, manages the entities of the system in a relational database.
-It exposes a REST API, interacts with the database using SQLAlchemy ORM and consumes topics from Kafka.
-In dev stage, the service seeds it's own data for testing purposes
+- `customer-management-service` - The system's core service, manages the entities of the system in a relational     database. It exposes an internal REST API, interacts with the database using SQLAlchemy ORM and consumes topics     from Kafka. In dev stage, the service seeds it's own data for testing purposes.
+    When deployed, it does not allow requests from outside the container network.
 
 - `Kafka Broker` - A Pub-Sub system messaging system for data streaming, processing and async communication.
 - `Zookeeper` - Provides state management for Kafka
 - `PostgreSQL` - A Powerful Relational database
+- `Airflow` - A task management platform for developing, scheduling and monitoring batch-oriented workflows.
+    Deployed separately from the other components (as it consists of 7 containers). loads a "calc_total_spent" DAG that periodically updates the database with customers' total spent sum.
+- `Grafana` - A monitoring platform for datasources. Displays the calculated data from `customer_total_spent`
+- `React Frontend` - A simple react application that allows for purchasing and viewing purchased items, deployed
+    independently.
 
 To Deploy the platoform, only docker is required:
 
