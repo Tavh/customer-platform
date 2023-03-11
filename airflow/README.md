@@ -43,8 +43,8 @@ docker-compose logs -f
 
 <img width="1480" alt="Screenshot 2023-03-11 at 0 19 43" src="https://user-images.githubusercontent.com/44731477/224442075-37ac7f1e-3ecd-41a9-b5ad-1c4401afcef6.png">
 
-9. This DAG writes into "customer_total_spent" table, to view the written data, open up a database viewing tool
-    and run the following query:
+9. This DAG writes into "customer_total_spent" table, to view the written data, either go to the Grafana
+ dashboard, or if you haven't set it up yet, open up a database viewing tool and run the following query:
 ```
 
 SELECT customer_id, total_spent FROM customer_total_spent;
