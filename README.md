@@ -23,6 +23,9 @@ A system for managing customers and their purchased items, demonstrates distribu
 - `React Frontend` - A simple react application that allows for purchasing and viewing purchased items, deployed
     independently.
 
+** Some services that should be private are currently exposed to the host
+for debugging purposes
+
 To Deploy the platoform, only docker is required:
 
 1. Clone this repository with
