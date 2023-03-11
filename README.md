@@ -22,7 +22,7 @@ A system for managing customers and their purchased items, demonstrates distribu
 
 To Deploy the platoform, only docker is required:
 
-1. Clone this repository with it's submodules
+1. Clone this repository with
 2. Navigate to /docker-compose
 3. If you're running an ARM CPU, run:
 ```
