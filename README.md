@@ -60,13 +60,14 @@ Fetching a customer's purchases:
 ```
 curl -X GET http://localhost:5000/customers/1/purchases
 ```
-<img width="639" alt="Screenshot 2023-03-11 at 11 40 37" src="https://user-images.githubusercontent.com/44731477/224477191-cf6be8ef-a376-4e3d-b7db-e9a1c0919862.png">
+<img width="638" alt="Screenshot 2023-03-12 at 0 04 56" src="https://user-images.githubusercontent.com/44731477/224513461-ee3aa1ba-7448-4a8b-9987-e0a13179074f.png">
 
 Making a purchase
 ```
 curl -X POST http://localhost:5000/customers/1/purchase/1
 ```
-<img width="653" alt="Screenshot 2023-03-11 at 11 40 20" src="https://user-images.githubusercontent.com/44731477/224477242-1abb6990-5670-4ea7-8117-09a5c88927b5.png">
+<img width="643" alt="Screenshot 2023-03-12 at 0 05 10" src="https://user-images.githubusercontent.com/44731477/224513466-d40a1178-6e17-4536-aab5-a6dd4899958d.png">
+
 
 By inspecting the logs in customer-management-service, we can see that the message was succesfully consumed
 and a purhcase record was inserted to the database:
