@@ -1,6 +1,6 @@
 # Customer frontend
 
-** This app is not included in the main docker-compose because it takes several minutes to build
+** This app is not included in the main docker-compose because it takes several minutes to build for production
 
 To deploy this app, npm is required.
 
