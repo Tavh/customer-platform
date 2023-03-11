@@ -108,11 +108,6 @@ services:
         delay: 3s
         max_attempts: 10
 
-  frontend:
-    build: ./customers-frontend/
-    ports:
-      - 3001:3000
-
 volumes:
   db_data:
     driver: local
