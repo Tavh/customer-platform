@@ -5,7 +5,14 @@ enriches customer-platform data
 
 To deploy airflow, follow these steps:
 
-1. Clone this repository
+
+1. Navigate to /dags and run:
+```
+python3 -m venv venv
+source venv/bin/activate
+python3 -m pip install --upgrade pip
+pip install -r requirements.txt
+```
 2. Make a "bridge" network between customer-platform and airflow:
 ```
 docker network create customer-airflow-bridge

@@ -8,7 +8,7 @@ This module depends on an available and a Kafka Broker.
 A docker-compose that deploys the entire system is available at: https://github.com/Tavh/customer-platform
 
 To run this application locally:
-1. Navigate to root (/customer-bff-service)
+1. Navigate to /customer-bff-service
 2. Run and install venv:
 ```
 python3 -m venv venv

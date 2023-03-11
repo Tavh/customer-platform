@@ -8,7 +8,7 @@ This module depends on an available PostgreSQL Server and Kafka Broker.
 A docker-compose that deploys the entire system is available at: https://github.com/Tavh/customer-platform
 
 To run this application locally:
-1. Navigate to root (/customer-management-service)
+1. Navigate to /customer-management-service
 2. Run and install venv:
 ```
 python3 -m venv venv
