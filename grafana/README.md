@@ -25,7 +25,7 @@ To add a Grafana datasource to the customers DB, follow these steps:
 
 7. Under /grafana, run:
 ```
-GRAFANA_API_KEY={<copied api key>} python create_datasource.py
+GRAFANA_API_KEY=<copied api key> python create_datasource.py
 ```
 
 8. Navigate to datasources:
@@ -37,10 +37,22 @@ GRAFANA_API_KEY={<copied api key>} python create_datasource.py
 11. The postgres server we deployed doesn't enable SSL, the only way to disable SSL/TLS mode in Grafana appears to be manually:
 <img width="553" alt="Screenshot 2023-03-11 at 17 35 23" src="https://user-images.githubusercontent.com/44731477/224493466-8883a508-e5e4-46ff-95c5-aa7787367560.png">
 
-12. Click on "Save & Test"
+12. Click on "Save & Test" to finish the datasource creation:
 <img width="471" alt="Screenshot 2023-03-11 at 17 38 26" src="https://user-images.githubusercontent.com/44731477/224493569-83f543c9-855e-42c6-9e19-5eec113a2e67.png">
 
-Now the datasource should be properlly functioning
+
+13. To create a panel that displays customers and their total spent sum, run the create_dashboard.py script under /grafana:
+```
+GRAFANA_API_KEY=<copied api key> python create_dashboard.py
+```
+
+Now, navigate to dashboards -> Customer Data to view the panel:
+
+<img width="252" alt="Screenshot 2023-03-11 at 18 25 41" src="https://user-images.githubusercontent.com/44731477/224495905-ca16cc4a-8fca-4ec7-9ff1-21e76e8e77a8.png">
+
+<img width="549" alt="Screenshot 2023-03-11 at 18 25 46" src="https://user-images.githubusercontent.com/44731477/224495906-5d53d56b-c6ec-4820-a3e4-7867cae3843b.png">
+
+<img width="745" alt="Screenshot 2023-03-11 at 18 25 52" src="https://user-images.githubusercontent.com/44731477/224495908-d6703955-959f-4429-ac58-caa384a960ed.png">
 
 
 
