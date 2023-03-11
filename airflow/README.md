@@ -6,7 +6,7 @@ enriches customer-platform data
 To deploy airflow, follow these steps:
 
 
-1. Navigate to /dags and run:
+1. Prepare the DAG dependencies bhy running under /dags:
 ```
 python3 -m venv venv
 source venv/bin/activate
