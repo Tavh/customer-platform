@@ -2,7 +2,10 @@
 
 A system for managing customers and their purchased items, demonstrates distributed, data oriented design.
 
-<img width="824" alt="Screenshot 2023-03-11 at 21 46 22" src="https://user-images.githubusercontent.com/44731477/224508608-fa8a2e0e-f2be-4400-b793-115d0d2521df.png">
+** In the actual configuration some services that should be private are currently exposed to the host machine
+for debugging purposes
+
+<img width="820" alt="Screenshot 2023-03-11 at 23 00 29" src="https://user-images.githubusercontent.com/44731477/224511430-a5e59b58-67e5-4c11-ad28-dcf9a6b93f9b.png">
 
 
 ## The platform contains the following components:
@@ -22,9 +25,6 @@ A system for managing customers and their purchased items, demonstrates distribu
 - `Grafana` - A monitoring platform for datasources. Displays the calculated data from `customer_total_spent`
 - `React Frontend` - A simple react application that allows for purchasing and viewing purchased items, deployed
     independently.
-
-** Some services that should be private are currently exposed to the host
-for debugging purposes
 
 To Deploy the platoform, only docker is required:
 
