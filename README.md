@@ -26,15 +26,16 @@ for debugging purposes
 - `customer-frontend` - A simple react application that allows for purchasing and viewing purchased items, deployed
     independently.
 
+## Deployment
 To Deploy the platoform, only docker is required:
 
-1. Clone this repository with
+1. Clone this repository
 2. Navigate to /docker-compose
-3. If you're running an ARM CPU, run:
+3. If you're using an ARM CPU, run:
 ```
 export DOCKER_DEFAULT_PLATFORM=linux/amd64
 ```
-4. Run the following command
+4. Run the docker-compose file:
 
 ```
 docker-compose up -d --build
@@ -57,13 +58,13 @@ There should already be prepared data in the database because of the seeder in '
 
 Fetching a customer's purchases:
 ```
-curl -X GET http://localhost:6000/customers/1/purchases
+curl -X GET http://localhost:5000/customers/1/purchases
 ```
 <img width="639" alt="Screenshot 2023-03-11 at 11 40 37" src="https://user-images.githubusercontent.com/44731477/224477191-cf6be8ef-a376-4e3d-b7db-e9a1c0919862.png">
 
 Making a purchase
 ```
-curl -X POST http://localhost:6000/customers/1/purchase/1
+curl -X POST http://localhost:5000/customers/1/purchase/1
 ```
 <img width="653" alt="Screenshot 2023-03-11 at 11 40 20" src="https://user-images.githubusercontent.com/44731477/224477242-1abb6990-5670-4ea7-8117-09a5c88927b5.png">
 
