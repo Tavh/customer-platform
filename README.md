@@ -71,10 +71,13 @@ docker-compose logs customer-management-service
 
 ## Airflow:
 
+<img width="1495" alt="Screenshot 2023-03-11 at 19 51 34" src="https://user-images.githubusercontent.com/44731477/224504001-a61333c8-378e-4c96-9fbf-f6ea440c4f19.png">
+
 Airflow is deployed with a different docker-compose, for instructions, go to:
 https://github.com/Tavh/customer-platform/blob/main/airflow/README.md
 
 ## Grafana
+<img width="745" alt="Screenshot 2023-03-11 at 18 25 52" src="https://user-images.githubusercontent.com/44731477/224504008-3a5f27f9-2f73-4a43-8286-9009af1d8d14.png">
 
 Grafana is deployed with the main docker-compose, but the datasource and dashboard are configured
 separately, reffer to:
@@ -82,6 +85,7 @@ separately, reffer to:
 https://github.com/Tavh/customer-platform/blob/main/grafana/README.md
 
 ## Frontend
-    
+ <img width="1172" alt="Screenshot 2023-03-11 at 19 46 46" src="https://user-images.githubusercontent.com/44731477/224504017-d8d08e06-9fd6-4cb5-8f5a-f21fea647262.png">
+
 The frontend is a simple react app, for guidance go to:
 https://github.com/Tavh/customer-platform/blob/main/customer-frontend/README.md
