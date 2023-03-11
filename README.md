@@ -25,7 +25,6 @@ export DOCKER_DEFAULT_PLATFORM=linux/amd64
 ```
 4. Run the following command
 
-
 ```
 docker-compose up -d --build
 ```
@@ -36,9 +35,9 @@ docker-compose up -d --build
 
 If you wish to deploy the services independently:
 
-`customer-bff-service` - https://github.com/Tavh/customer-bff-service/blob/main/README.md
+`customer-bff-service` - https://github.com/Tavh/customer-platform/blob/main/customer-bff-service/README.md
 
-`customer-management-service` - https://github.com/Tavh/customer-management-service/blob/main/README.md
+`customer-management-service` - https://github.com/Tavh/customer-platform/blob/main/customer-management-service/README.md
 
 
 ## Performing requests:
@@ -70,3 +69,19 @@ docker-compose logs customer-management-service
 <img width="778" alt="Screenshot 2023-03-11 at 11 46 56" src="https://user-images.githubusercontent.com/44731477/224477386-7d2e8bbf-92f7-4be6-9942-00b7048c13f1.png">
 
 
+## Airflow:
+
+Airflow is deployed with a different docker-compose, for instructions, go to:
+https://github.com/Tavh/customer-platform/blob/main/airflow/README.md
+
+## Grafana
+
+Grafana is deployed with the main docker-compose, but the datasource and dashboard are configured
+separately, reffer to:
+
+https://github.com/Tavh/customer-platform/blob/main/grafana/README.md
+
+## Frontend
+    
+The frontend is a simple react app, for guidance go to:
+https://github.com/Tavh/customer-platform/blob/main/customer-frontend/README.md
