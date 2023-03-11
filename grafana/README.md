@@ -34,8 +34,13 @@ GRAFANA_API_KEY={<copied api key>} python create_datasource.py
 9. Enter the created datasource configuration: 
 <img width="629" alt="Screenshot 2023-03-11 at 17 33 26" src="https://user-images.githubusercontent.com/44731477/224493355-fc45a34b-994f-49ab-a52e-0ddf5c82a5a7.png">
 
-10. The postgres server we deployed doesn't enable SSL, the only way to disable SSL/TLS mode in Grafana appears to be manually:
+11. The postgres server we deployed doesn't enable SSL, the only way to disable SSL/TLS mode in Grafana appears to be manually:
 <img width="553" alt="Screenshot 2023-03-11 at 17 35 23" src="https://user-images.githubusercontent.com/44731477/224493466-8883a508-e5e4-46ff-95c5-aa7787367560.png">
+
+12. Click on "Save & Test"
+<img width="471" alt="Screenshot 2023-03-11 at 17 38 26" src="https://user-images.githubusercontent.com/44731477/224493569-83f543c9-855e-42c6-9e19-5eec113a2e67.png">
+
+Now the datasource should be properlly functioning
 
 
 
