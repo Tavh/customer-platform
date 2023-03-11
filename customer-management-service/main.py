@@ -42,8 +42,7 @@ if os.environ.get('STAGE') == 'dev':
 
 
 # Set up Kafka Consumer and Flask Rest Controller
-consumer = KafkaPurchaseConsumer(purchase_dal=purchase_dal, topic="purchases", bootstrap_servers=bootstrap_servers)
-
+KafkaPurchaseConsumer(purchase_dal=purchase_dal, topic="purchases", bootstrap_servers=bootstrap_servers)
 rest_controller.RestController(app=app, customer_dal=customer_dal)
 
 
