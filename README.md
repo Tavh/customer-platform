@@ -2,6 +2,9 @@
 
 A system for managing customers and their purchased items, demonstrates distributed, data oriented design.
 
+<img width="824" alt="Screenshot 2023-03-11 at 21 46 22" src="https://user-images.githubusercontent.com/44731477/224508608-fa8a2e0e-f2be-4400-b793-115d0d2521df.png">
+
+
 ## The platform contains the following components:
 
 - `customer-bff-service` - A client-facing web server, serves a specfiic 
