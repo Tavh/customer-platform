@@ -2,8 +2,7 @@
 
 A system for managing customers and their purchased items, demonstrates distributed, data oriented design.
 
-<img width="819" alt="Screenshot 2023-03-11 at 23 12 36" src="https://user-images.githubusercontent.com/44731477/224511863-1fa3f620-9036-4b6f-936c-c46701ace6db.png">
-
+<img width="743" alt="Screenshot 2023-03-11 at 23 30 49" src="https://user-images.githubusercontent.com/44731477/224512370-5629ad2a-3103-41b2-8fab-588fb63b199a.png">
 
 
 ** In the actual configuration some services that should be private are currently exposed to the host machine
