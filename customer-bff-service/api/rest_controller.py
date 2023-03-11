@@ -5,7 +5,7 @@ import requests
 from util.logger import get_logger
 from requests.exceptions import HTTPError
 from models.models import Purchase
-
+from flask_cors import CORS
 
 class RestController:
     def __init__(self, app: Flask, producer: KafkaPurchaseProducer, customer_management_url: str):
@@ -15,7 +15,11 @@ class RestController:
         Args:
             app (Flask): The Flask application instance.
             producer (KafkaPurchaseProducer): The KafkaPurchaseProducer instance to use for publishing purchase events.
+            customer_management_url (str): The URL of the customer management service.
         """
+        # Enable Cross-Origin Resource Sharing for the API endpoints
+        CORS(app)
+        
         self.app = app
         self.logger = get_logger(__name__)
         self.producer = producer
@@ -66,5 +70,3 @@ class RestController:
         except Exception as e:
             self.logger.error(f"An error occurred while retrieving purchases for customer with ID {customer_id}: {e}")
         return []
-            
-        
