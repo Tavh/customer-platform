@@ -15,8 +15,6 @@ In dev stage, the service seeds it's own data for testing purposes
 - `Zookeeper` - Provides state management for Kafka
 - `PostgreSQL` - A Powerful Relational database
 
-
-
 To Deploy the platoform, only docker is required:
 
 1. Clone this repository with it's submodules

@@ -37,13 +37,13 @@ docker-compose logs -f
 
 6. Login by using the 'airflow' as both username and password
 
-7. Search the "user_total_spent" DAG
+7. Search the "customer_total_spent" DAG
 
 8. Toggle the DAG to activate:
 
 <img width="1480" alt="Screenshot 2023-03-11 at 0 19 43" src="https://user-images.githubusercontent.com/44731477/224442075-37ac7f1e-3ecd-41a9-b5ad-1c4401afcef6.png">
 
-9. This DAG writes into "user_total_spent" table, to view the written data, open up a database viewing tool
+9. This DAG writes into "customer_total_spent" table, to view the written data, open up a database viewing tool
     and run the following query:
 ```
 
