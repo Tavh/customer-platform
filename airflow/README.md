@@ -17,7 +17,7 @@ pip install -r requirements.txt
 ```
 docker network create customer-airflow-bridge
 ``` 
-3. Run the customer-platform, instructions are at: 
+3. If you haven't yet, run the customer-platform, instructions are at: 
 https://github.com/Tavh/customer-platform/blob/main/README.md
 
 4. Run the airflow docker-compose in this repo's root
