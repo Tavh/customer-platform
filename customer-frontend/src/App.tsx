@@ -38,6 +38,7 @@ function App() {
       );
       console.log(response);
       setError("");
+      alert("Purchase was successful!");
     } catch (error) {
       console.error(error);
     }
