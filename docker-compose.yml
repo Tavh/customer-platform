@@ -67,6 +67,11 @@ services:
       GF_DATABASE_NAME: grafana
       GF_DATABASE_USER: postgres
       GF_DATABASE_PASSWORD: postgres
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
 
   customer-management-service:
     build: ./customer-management-service/
