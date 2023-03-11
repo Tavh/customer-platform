@@ -47,7 +47,8 @@ docker-compose logs -f
     and run the following query:
 ```
 
-SELECT customer_id, total_spent FROM user_total_spent;
-```
+SELECT customer_id, total_spent FROM customer_total_spent;
 
-<img width="497" alt="Screenshot 2023-03-11 at 0 36 15" src="https://user-images.githubusercontent.com/44731477/224441110-0bdb8abc-2f16-4664-a2ef-5c8d84610cdf.png">
+```
+<img width="541" alt="Screenshot 2023-03-11 at 15 43 41" src="https://user-images.githubusercontent.com/44731477/224488139-c7b8f3a0-6a1f-4299-8abc-f74299b5fbb0.png">
+
