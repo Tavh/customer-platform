@@ -13,7 +13,7 @@ source venv/bin/activate
 python3 -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
-2. Make a "bridge" network between customer-platform and airflow:
+2. Make sure a "bridge" network exists to link between customer DB and airflow:
 ```
 docker network create customer-airflow-bridge
 ``` 
