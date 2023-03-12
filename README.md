@@ -30,7 +30,7 @@ for debugging purposes
 To Deploy the platoform, only docker is required:
 
 1. Clone this repository
-2. Create a bridge network is required for communication with airflow later on:
+2. A a bridge network is required for communication with airflow later on:
 ```
 docker network create customer-airflow-bridge
 ```
