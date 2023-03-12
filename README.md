@@ -41,12 +41,11 @@ docker network create customer-airflow-bridge
 DOCKER_DEFAULT_PLATFORM=linux/amd64 docker-compose up -d --build
 ```
 
-The target platform is needed because even though arm runs Rosetta 2 by default, some libraries such as kafka-python are not designed for inter-communication between different architectures
-
 <img width="435" alt="Screenshot 2023-03-11 at 11 39 44" src="https://user-images.githubusercontent.com/44731477/224477143-5a109e9e-b5d7-4961-9c23-980695c2f1c0.png">
 
 <img width="1029" alt="Screenshot 2023-03-11 at 11 39 56" src="https://user-images.githubusercontent.com/44731477/224477164-44d7545a-bef2-4be7-8ed1-9b5a1281b9a4.png">
 
+** The target platform is needed because even though arm runs Rosetta 2 by default, some libraries such as kafka-python are not designed for inter-communication between different architectures
 
 If you wish to deploy the services independently:
 
