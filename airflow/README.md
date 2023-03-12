@@ -35,7 +35,7 @@ docker-compose logs -f
 
 5. Once the compose is done, fire up a browser and navigate to http://localhost:8080
 
-6. Login by using the 'airflow' as both username and password
+6. Login by using 'airflow' as both username and password
 
 7. Search the "customer_total_spent" DAG
 
