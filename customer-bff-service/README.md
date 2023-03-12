@@ -37,5 +37,5 @@ The following API endpoints are available:
 - `GET /customers/{customer_id}/purchases`: Returns a list of purchases made by the customer.
 
 - `POST
-/customers/{customer_id}/purchase/{item_id}
+/customers/{customer_id}/purchase/{item_id}`: 
 Registers a purchase request
