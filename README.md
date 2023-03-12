@@ -45,7 +45,7 @@ DOCKER_DEFAULT_PLATFORM=linux/amd64 docker-compose up -d --build
 
 <img width="1029" alt="Screenshot 2023-03-11 at 11 39 56" src="https://user-images.githubusercontent.com/44731477/224477164-44d7545a-bef2-4be7-8ed1-9b5a1281b9a4.png">
 
-** The target platform is needed because even though arm runs Rosetta 2 by default, some libraries such as kafka-python are not designed for inter-communication between different architectures
+** The target platform is needed because even though macs with M1 run Rosetta 2 by default, some libraries such as kafka-python are not designed for inter-communication between different architectures
 
 If you wish to deploy the services independently:
 
